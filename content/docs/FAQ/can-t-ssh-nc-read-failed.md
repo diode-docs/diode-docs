@@ -3,7 +3,7 @@ _schema: default
 title: 'Can''t SSH - nc: read failed'
 nav_title: 'Can''t SSH - nc: read failed'
 nav_section: FAQ
-weight: 20002
+weight: 20012
 draft: false
 ---
 The Diode CLI 1.15.1 and earlier has a known bug that can be exposed upon an unexpected hard shut down of the client.  This bug is related to the client optimistically storing known good block information, but not being able to validate the information before the shutdown occurred.
