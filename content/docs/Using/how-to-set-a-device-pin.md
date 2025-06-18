@@ -8,7 +8,7 @@ draft: false
 ---
 A Device PIN can be set both on mobile and desktop. If set, it will be required to be entered when opening Diode Collab.
 
-> **Note:** On mobile, data is already encrypted on disk by default.
+> **Note:** All data for Diode Collab is encrypted at rest. When you implement a PIN, your PIN is used as an additional encryption key. Your data cannot be retrieved through the app or from the host system without the PIN code.
 
 **<u>To set:</u>**
 
