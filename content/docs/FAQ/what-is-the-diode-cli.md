@@ -3,7 +3,7 @@ _schema: default
 title: What is the Diode CLI?
 nav_title: What is the Diode CLI?
 nav_section: FAQ
-weight: 20013
+weight: 20000
 draft: false
 ---
 <br>The Diode Command Line Interface (CLI) is the easiest way to get up and running with the full power of the <a href="https://network.docs.diode.io/docs/faq/what-is-the-diode-network/" target="_blank" rel="noopener"><strong>Diode Network</strong></a>. It is a small program that can be installed on Linux, MacOS, or Windows and runs from a terminal window / command line prompt.
