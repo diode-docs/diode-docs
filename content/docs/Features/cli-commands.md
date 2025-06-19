@@ -6,7 +6,7 @@ nav_section: Features
 weight: 51
 draft: false
 ---
-### **Overview**
+## **Overview**
 
 If you have the Diode Client installed, in a terminal window, you can type `diode` to get a list of commands and `diode <command> --help` to get detailed help via the command line.
 
@@ -16,7 +16,7 @@ Name
 
 SYNOPSYS
   diode [-allowlists=] [-api=false] [-apiaddr=localho...]
-        [-bind=] [-blocklists=] [-blockprofile=] [-blockprofilerate=1]
+        [-bind=] [-blocklists=] [-blockprofile=] [-blockprofilerate=1] [-bnscachetime=10m0s]
         [-configpath=] [-cpuprofile=] [-dbpath=/Users/...] [-debug=false]
         [-diodeaddrs=] [-e2etimeout=15s] [-fleet=] [-logdatetime=false]
         [-logfilepath=] [-memprofile=] [-metrics=false] [-mutexprofile=]
@@ -38,6 +38,16 @@ COMMANDS
 
 Run 'diode COMMAND --help' for more information on a command.
 ```
+
+## Commands
+
+See below for options - options must be specified before the command.
+
+> diode \{options\} \{command\} \{args\}
+
+Example:
+
+> diode -debug=true publish -public 80:80
 
 ### **diode bns**
 
@@ -299,3 +309,72 @@ ARGS
 EXAMPLE
   diode version
 ```
+
+## **Options**
+
+Options must be specified before the command.
+
+> diode \{options\} \{command\} \{args\}
+
+Example:
+
+> diode -debug=true publish -public 80:80
+
+### **\-diodeaddrs**
+
+Specify a Relay Node to connect / route through.  The client's activity will route through the Relay Node specified.
+
+<u>Args:</u>
+
+> \-diodeaddrs=\[node IP\]:\[node edge port\]
+
+<u>Example usage:</u>
+
+Fetch time from a specified Relay Node
+
+> diode -diodeaddrs=45.79.115.246:41046 time
+
+<u>Other information:</u>
+
+* If another client specifies a different Relay Node to connect through, that client will not be able to connect to your client.
+* The \[node IP\] argument may also be a DNS name (e.g. us1.prenet.diode.io)
+* The \[node edge port\] defaults to 41046 for most nodes, but some nodes may use a different port as specified by the operator
+* A node's \[node IP\]:\[node edge port\] settings can be viewed via the node system's terminal by "sudo snap get diode-node".  The "host" parameter is the \[node IP\], and the "edge2-port" parameter shows the available edge ports (choose one to specify).
+
+### **\-bind**
+
+Bind a local port to a remote client's Web3 port.  Activity into your local port will emerge on the remote client's port.
+
+Parameters:
+
+> \[local port\]:\[client ID\]:\[remote port\]
+
+Example usage:
+
+> diode -bind 15900:0x123fc642e256e1069caf9c3a812cf314c623abcd:5900
+
+### **\-debug**
+
+View more verbose debug messages in the console
+
+Parameters:
+
+> true \| false
+
+Example usage:
+
+> \-debug=true
+
+### **\-dbpath**
+
+asd
+
+### **\-fleet**
+
+asd
+
+### **\-bnscachetime**
+
+asd
+
+**\[-allowlists=\] \[-api=false\] \[-apiaddr=localho...\] \[-bind=\] \[-blocklists=\] \[-blockprofile=\] \[-blockprofilerate=1\] \[-configpath=\] \[-cpuprofile=\] \[-dbpath=/Users/...\] \[-debug=false\] \[-diodeaddrs=\] \[-e2etimeout=15s\] \[-fleet=\] \[-logdatetime=false\] \[-logfilepath=\] \[-memprofile=\] \[-metrics=false\] \[-mutexprofile=\] \[-mutexprofilerate=1\] \[-pprofport=0\] \[-retrytimes=3\] \[-retrywait=1s\] \[-rlimit\_nofile=0\] \[-timeout=5s\] \[-update=true\]**
