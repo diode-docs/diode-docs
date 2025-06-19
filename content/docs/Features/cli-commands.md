@@ -339,42 +339,100 @@ Fetch time from a specified Relay Node
 * If another client specifies a different Relay Node to connect through, that client will not be able to connect to your client.
 * The \[node IP\] argument may also be a DNS name (e.g. us1.prenet.diode.io)
 * The \[node edge port\] defaults to 41046 for most nodes, but some nodes may use a different port as specified by the operator
-* A node's \[node IP\]:\[node edge port\] settings can be viewed via the node system's terminal by "sudo snap get diode-node".  The "host" parameter is the \[node IP\], and the "edge2-port" parameter shows the available edge ports (choose one to specify).
+* A node's \[node IP\]:\[node edge port\] settings can be viewed via the node system's terminal by "sudo snap get diode-node".  The "host" parameter is the \[node IP\], and the "edge2-port" parameter shows the available edge ports (choose one to specify).  The settings are also visible in the node's web dashboard under "Primary Edge Address".
 
 ### **\-bind**
 
 Bind a local port to a remote client's Web3 port.  Activity into your local port will emerge on the remote client's port.
 
-Parameters:
+<u>Args:</u>
 
-> \[local port\]:\[client ID\]:\[remote port\]
+> \-bind \[local port\]:\[client ID\]:\[remote port\]:\[udp\|tcp\|tls\]
 
-Example usage:
+*bind's* transport default is "tcp"
+
+<u>Example usage:</u>
+
+Bind the local port 15900 to a remote client's local port 5900 (as often used for secure VNC tunneling).
 
 > diode -bind 15900:0x123fc642e256e1069caf9c3a812cf314c623abcd:5900
+
+<u>Other information:</u>
+
+* [Remote VNC example](https://cli.docs.diode.io/docs/using/remote-vnc-articles/)
+* [Remote SMB/Samba share example](https://cli.docs.diode.io/docs/using/tunneled-p2p-dashboards/)
 
 ### **\-debug**
 
 View more verbose debug messages in the console
 
-Parameters:
+<u>Args:</u>
 
-> true \| false
+> \-debug=\[true \| false\]
 
-Example usage:
+*debug* default is "false"
 
-> \-debug=true
+<u>Example usage:</u>
+
+Fetch time from the network while showing verbose debug messages.
+
+> diode -debug=true time
 
 ### **\-dbpath**
 
-asd
+Specify a different database than the default.  This can be used to run multiple Diode identities  via the CLI on the same machine.
+
+<u>Args:</u>
+
+> \-dbpath=\[path to database file\]
+
+<u>Example usage:</u>
+
+Use a database on the Desktop to publish content to that database's identity via Web3.
+
+> diode -dbpath=/home/pi/Desktop/private.db publish -public 80:80
+
+<u>Other information:</u>
+
+* [Use a different wallet for the CLI](https://cli.docs.diode.io/docs/faq/how-do-i-use-a-different-wallet-for-the-diode-cli/)
+* [Where is my wallet stored?](https://cli.docs.diode.io/docs/faq/where-is-my-local-wallet-stored/)
 
 ### **\-fleet**
 
-asd
+Specify a different fleet address than is stored in the configuration.  Useful for testing.
+
+<u>Args:</u>
+
+> \-fleet=\[fleet address\]
+
+<u>Example usage:</u>
+
+Publish content using the development fleet contract.
+
+> diode -fleet=0x6000000000000000000000000000000000000000 publish -public 80:80
+
+<u>Other information:</u>
+
+* [What is a fleet contract?](https://network.docs.diode.io/docs/features/what-is-a-fleet-contract/)
+* The development fleet contact (address 0x6000000000000000000000000000000000000000) is a "promiscuous" fleet contract that is available for free for all devices to use.  It is also the default fleet contract used by new installations of the Diode CLI.  It does not have any SLA guarantees due to low or no incentives for the network to route its traffic.
+* [Persist a different fleet](https://network.docs.diode.io/docs/faq/change-my-fleet-perimeter/)
 
 ### **\-bnscachetime**
 
-asd
+Specify a name cache staleness timeout so that any subsequent use of the name after the timeout refreshes the name contents from the chain.  Useful when using BNS names as access control lists that may frequently change.
 
-**\[-allowlists=\] \[-api=false\] \[-apiaddr=localho...\] \[-bind=\] \[-blocklists=\] \[-blockprofile=\] \[-blockprofilerate=1\] \[-configpath=\] \[-cpuprofile=\] \[-dbpath=/Users/...\] \[-debug=false\] \[-diodeaddrs=\] \[-e2etimeout=15s\] \[-fleet=\] \[-logdatetime=false\] \[-logfilepath=\] \[-memprofile=\] \[-metrics=false\] \[-mutexprofile=\] \[-mutexprofilerate=1\] \[-pprofport=0\] \[-retrytimes=3\] \[-retrywait=1s\] \[-rlimit\_nofile=0\] \[-timeout=5s\] \[-update=true\]**
+<u>Args:</u>
+
+> \-bnscachetime=\[timeout\]
+
+*timeout* default is "10m0s"
+
+<u>Example usage:</u>
+
+Publish private content to all clients listed in the "my-auth-list" name and refresh the client list every five minutes.
+
+> diode -bnscachetime=5m0s publish -private 80:80,my-auth-list
+
+&nbsp;
+
+&nbsp;
