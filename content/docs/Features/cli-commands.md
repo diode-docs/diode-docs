@@ -344,6 +344,7 @@ Fetch time from a specified Relay Node
 * The \[node IP\] argument may also be a DNS name (e.g. us1.prenet.diode.io)
 * The \[node edge port\] defaults to 41046 for most nodes, but some nodes may use a different port as specified by the operator
 * A node's \[node IP\]:\[node edge port\] settings can be viewed via the node system's terminal by "sudo snap get diode-node".  The "host" parameter is the \[node IP\], and the "edge2-port" parameter shows the available edge ports (choose one to specify).  The settings are also visible in the node's web dashboard under "Primary Edge Address".
+* You may specify this argument multiple times to provide failover.  e.g. *diode -diodeaddrs=node1.mydomain.io:41046 -diodeaddrs=node2.mydomain.io:41046 time*
 
 ### **\-bind**
 
