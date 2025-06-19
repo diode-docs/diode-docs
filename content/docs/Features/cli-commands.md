@@ -190,19 +190,19 @@ ARGS
   -indexed
     	enable directory indexing in http static file server
   -private value
-    	expose ports to private users, so that user could connect to
+    	expose local ports to private users.  value may be <local_port>:<remote_port> or <accessible ip>:<port>:<remote_port>
   -protected value
-    	expose ports to protected users (in fleet contract), so that user could connect to
+    	expose local ports to protected users (members of fleet contract).  value may be <local_port>:<remote_port> or <accessible ip>:<port>:<remote_port>
   -proxy_host string
     	host of socksd proxy server (default "127.0.0.1")
   -proxy_port int
     	port of socksd proxy server (default 1080)
   -public value
-    	expose ports to public users, so that user could connect to
+    	expose ports to public users.  value may be <local_port>:<remote_port> or <accessible ip>:<port>:<remote_port>
   -socksd
     	enable socksd proxy server
 EXAMPLE
-  diode publish -public 80:80 -public 8080:8080 -protected 3000:3000 -protected 3001:3001 -private 22:22,0x......,0x...... -private 33:33,0x......,0x......
+  diode publish -public 80:80 -public 8080:8080 -protected 3000:3000 -protected 3001:3001 -private 22:22,0x......,0x...... -private 33:33,0x......,0x......, -private 192.168.0.123:80:8008
 ```
 
 ### **diode reset**
