@@ -423,7 +423,7 @@ Publish content using the development fleet contract.
 
 ### **\-bnscachetime**
 
-Specify a name cache staleness timeout so that any subsequent use of the name after the timeout refreshes the name contents from the chain.  Useful when using BNS names as access control lists that may frequently change.
+Specify a name cache staleness timeout so that any subsequent use of the name (after the timeout) refreshes the name contents from the chain.  Useful when using BNS names as access control lists that may frequently change.
 
 <u>Args:</u>
 
