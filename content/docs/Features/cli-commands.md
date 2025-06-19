@@ -41,11 +41,13 @@ Run 'diode COMMAND --help' for more information on a command.
 
 ## Commands
 
-See below for options - options must be specified before the command.
+<u>Usage:</u>
 
 > diode \{options\} \{command\} \{args\}
 
-Example:
+See below for options - they must be specified before the command.
+
+<u>Example:</u>
 
 > diode -debug=true publish -public 80:80
 
@@ -312,11 +314,13 @@ EXAMPLE
 
 ## **Options**
 
-Options must be specified before the command.
+<u>Usage:</u>
 
 > diode \{options\} \{command\} \{args\}
 
-Example:
+Options must be specified before the command.
+
+<u>Example:</u>
 
 > diode -debug=true publish -public 80:80
 
