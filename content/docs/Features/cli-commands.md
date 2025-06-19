@@ -423,7 +423,7 @@ Publish content using the development fleet contract.
 
 ### **\-bnscachetime**
 
-Specify a name cache staleness timeout so that any subsequent use of the name (after the timeout) refreshes the name contents from the chain.  Useful when using BNS names as access control lists that may frequently change.
+Specify a name cache staleness timeout so that any subsequent use of the name (after the timeout) refreshes the name members from the chain.  Useful when using BNS names as access control lists that may frequently change.
 
 <u>Args:</u>
 
@@ -433,7 +433,7 @@ Specify a name cache staleness timeout so that any subsequent use of the name (a
 
 <u>Example usage:</u>
 
-Publish private content to all clients listed in the "my-auth-list" name and refresh the client list every five minutes.
+Publish private content to all clients listed as members of the "my-auth-list" name, and refresh the member list every five minutes.
 
 > diode -bnscachetime=5m0s publish -private 80:80,my-auth-list
 
