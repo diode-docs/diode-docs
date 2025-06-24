@@ -28,7 +28,7 @@ By ***default***, all Discussions are ***only*** between the course participant 
 
 #### **PRIVATE DISCUSSIONS**
 
-*When Group Discussions is turned ON, all comments by default are viewable by all course participants.*However, participants and instructors can still send private comments (messages) by using "@mentions". Comments posted when using @mentions (just start typing \[@'name of person'\] in the Discussion comment box and the user will appear if they are reachable by private message) are private comments between the one posting the comment and the designated recipient(s). The common exception to this is noted in ***italics/bold*** below.
+\*When Group Discussions is turned ON, all comments by default are viewable by all course participants.\*However, participants and instructors can still send private comments (messages) by using "@mentions". Comments posted when using @mentions (just start typing \[@'name of person'\] in the Discussion comment box and the user will appear if they are reachable by private message) are private comments between the one posting the comment and the designated recipient(s). The common exception to this is noted in ***italics/bold*** below.
 
 Initially, only course instructors are available to participants to privately contact using @mentions. However, once a course participant has posted a comment, they are included in the available list of individuals who can receive private messages from other participants. ***All comments, private and public, are viewable to Course Instructors and Account Admins.***
 
