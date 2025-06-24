@@ -16,8 +16,6 @@ From your DASHBOARD, you will have a quick view of all your Teams, Tasks, Applic
 
 #### ![Dashboard](/uploads/screenshot-2023-12-28-at-11-02-53-am.png)
 
-&nbsp;
-
 #### Managing Account
 
 You can manage BILLING, ORGANIZATION, <a href="https://support.compendium360.com/article/8l21fd5jl2-how-to-set-up-custom-branding" target="_blank" rel="noopener"><strong>BRANDING</strong></a>, ROLES, CUSTOM DOMAIN, [**CUSTOM LABELS**](https://support.compendium360.com/article/nxcco503yi-how-to-set-up-custom-labels), and eCOMMERCE from the "<a href="https://app.compendium360.com/users/sign_in?next_path=/navigations/manage_account" target="_blank" rel="noopener"><strong>Manage Account</strong></a>" option in your Profile Avatar at the Top Right of your account.
