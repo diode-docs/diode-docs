@@ -14,5 +14,5 @@ Sub Accounts can also be used in other ways such as to provide an organization (
 
 **Additional Resources:**
 
-* What Are Sub Accounts?
+* <a href="https://compendium360.docs.diode.io/docs/what-are-sub-accounts/" rel="nofollow">What Are Sub Accounts?</a>
 * <a href="https://compendium360.docs.diode.io/docs/account-setup/branded-login-page-setup/" rel="nofollow">Single Custom Branded Login Page for all Connected Accounts</a>
