@@ -12,7 +12,7 @@ There are several ways a User can be added to a Team. We'll take a look at the t
 2. Inviting a New User to a Team Who has no Account or History On Your Platform
 3. Adding a User to a Team from Another Team
 
-> **<u>Helpful Reminder</u> -** We use the DEFAULT terms (labels) in all of our Support Documentation. Your Account may have Custom Labels enabled and in use. For example, the term TEAM is the default label for the grouping of users on the platform. However, the label TEAM may have been given a Custom Label such as CLASS, COHORT; DIVISION; CLIENT; DEPARTMENT; ETC. If you are an ADMIN on your account and your plan supports Custom Labels, you can <a href="https://app.compendium360.com/users/sign_in?next_path=/account_settings?section=custom_labels" target="_blank" rel="noopener"><strong>view and edit your Custom Labels HERE</strong></a>.
+> **Helpful Reminder -** We use the DEFAULT terms (labels) in all of our Support Documentation. Your Account may have Custom Labels enabled and in use. For example, the term TEAM is the default label for the grouping of users on the platform. However, the label TEAM may have been given a Custom Label such as CLASS, COHORT; DIVISION; CLIENT; DEPARTMENT; ETC. If you are an ADMIN on your account and your plan supports Custom Labels, you can <a href="https://app.compendium360.com/users/sign_in?next_path=/account_settings?section=custom_labels" target="_blank" rel="noopener"><strong>view and edit your Custom Labels HERE</strong></a>.
 
 #### **Option 1: Adding a User to a Team from Recruiting**
 
@@ -45,5 +45,75 @@ In the pop-up, select the Team you want to add the candidate to and the Role you
 ![Set Team](/uploads/screenshot-2024-01-01-at-9-30-12-pm.png)
 
 **Step 5:** Manage User
+
+Upon clicking "Add To Team" in the step above, the User will receive an Notification via email and on the Platform that they have been added to the team. You can now manage the user on this team.
+
+Be sure to complete the Recruiting process by placing the candidate in the appropriate stage of the Recruiting Sequence.
+
+#### **Option 2: Inviting a New User to a Team Who has no Account or History On Your Platform**
+
+**Step 1:** Select Team
+
+Navigate to the Team the user will be invited to
+
+![Team Navigation](/uploads/screenshot-2024-01-01-at-6-31-57-pm.png)
+
+**Step 2:** Choose "Invitations"
+
+In the "Members" section, select the "Invitations" tab
+
+![Member Invitations](/uploads/screenshot-2024-01-01-at-6-32-48-pm.png)
+
+**Step 3:** Send Invite
+
+On the right side of the screen, you will see a section where you can send an "Invitation" and "Add User". To send an "Invitation", Enter the individual's information, choose the role they will have on the team, and click on "Send Invite".
+
+![Add User](/uploads/screenshot-2024-01-01-at-6-39-04-pm.png)
+
+**Step 4:** User Accepts Invite
+
+The user will receive an email invitation to the team. Once they receive it, they will need to click on "Accept Invite".
+
+![Welcome Message](/uploads/screenshot-2024-01-01-at-7-19-31-pm.png)
+
+Once they have accepted the invitation, you will also receive a Notification (via email and on the Platform) confirming they have accepted the invitation.
+
+![Acceptance](/uploads/screenshot-2024-01-01-at-7-19-12-pm.png)
+
+> **NOTE:** If the user has not received the invitation email or has not seen it, be sure they have checked their junk mail and white-labeled "noreply@diode.io". You can always view their invitation status and resend or delete the invitation from the "Invitations" tab if needed.
+
+![Invitation Status](/uploads/screenshot-2024-01-01-at-7-14-24-pm.png)
+
+**Step 5:** Manage User
+
+You can now assign materials and manage the user on your Account!
+
+#### **Option 3: Adding a User to a Team from Another Team**
+
+**Step 1:** Select Team
+
+Navigate to the Team the user will be invited to
+
+![Team Navigator](/uploads/screenshot-2024-01-01-at-6-31-57-pm-1.png)
+
+**Step 2:** Choose "Invitations" and Then Select "Add User"
+
+In the "Members" section, select the "Invitations" tab and then select "Add User" in the box on the far right of the screen.
+
+![Member Invitations](/uploads/screenshot-2024-01-01-at-8-51-04-pm.png)
+
+**Step 3:** Add User
+
+On the right side of the screen, you will see a section where you can send an "Invitation" and "Add User". Choose "Add User", select the user from the "Select user" drop-down, select their "Role" and then click "Add User".
+
+![Add User](/uploads/screenshot-2024-01-01-at-8-50-37-pm.png)
+
+**Step 4:** Manage User
+
+Upon clicking "Add User" in the step above, the User will receive an Notification via email and on the Platform that they have been added to the team. You can now manage the user on this team.
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
