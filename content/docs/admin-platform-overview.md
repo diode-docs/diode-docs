@@ -8,15 +8,25 @@ draft: false
 ---
 Welcome to Compendium<sup>360</sup>. We're glad you're here! We'll take a look around the Platform and get you acquainted with the layout and some powerful features available.
 
+> Your DASHBOARD will look a little different depending on if you are a basic USER or ADMINISTRATOR. This tutorial is specifically for ADMINISTRATORS. If you are a basic USER, CLICK HERE for your "USERS START HERE" guide.
+
 #### Dashboard
 
 From your DASHBOARD, you will have a quick view of all your Teams, Tasks, Applicants, Enrollments, and more. When you first create your account, you will be invited to "Create a Team", "Browse Catalog" and more to get started.
 
-#### ![Dashboard](/uploads/screenshot-2023-12-28-at-11-02-53-am.png)Managing Account
+#### ![Dashboard](/uploads/screenshot-2023-12-28-at-11-02-53-am.png)
+
+&nbsp;
+
+#### Managing Account
 
 You can manage BILLING, ORGANIZATION, <a href="https://support.compendium360.com/article/8l21fd5jl2-how-to-set-up-custom-branding" target="_blank" rel="noopener"><strong>BRANDING</strong></a>, ROLES, CUSTOM DOMAIN, [**CUSTOM LABELS**](https://support.compendium360.com/article/nxcco503yi-how-to-set-up-custom-labels), and eCOMMERCE from the "<a href="https://app.compendium360.com/users/sign_in?next_path=/navigations/manage_account" target="_blank" rel="noopener"><strong>Manage Account</strong></a>" option in your Profile Avatar at the Top Right of your account.
 
-#### ![Manage Account](/uploads/screenshot-2023-12-28-at-11-05-27-am.png)My Training Center
+#### ![Manage Account](/uploads/screenshot-2023-12-28-at-11-05-27-am.png)
+
+&nbsp;
+
+#### My Training Center
 
 "My Training Center" is where you will find all courses that you are personally enrolled in as well as the Account's Course Catalog. As an Admin in the Course Catalog, you can review Catalog listings, enroll users in a Course, Live Session, or Team, and self-enroll in any of the Catalog listings.
 
