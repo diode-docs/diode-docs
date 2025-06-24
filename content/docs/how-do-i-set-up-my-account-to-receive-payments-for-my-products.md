@@ -3,7 +3,7 @@ _schema: default
 title: How do I Set Up My Account to Receive Payments for my Products?
 nav_title: How do I Set Up My Account to Receive Payments for my Products?
 nav_section: FAQ
-weight: 405
+weight: 409
 draft: false
 ---
 Receiving payments (charging for products on your Account; aka: "eCommerce"), where you can charge and receive payments for products (courses, classes, live sessions, etc), is available to some accounts.  Please inquire about enabling these features.

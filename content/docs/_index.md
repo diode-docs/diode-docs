@@ -3,7 +3,7 @@ _schema: default
 title: Can I Charge for Courses?
 nav_title: Can I Charge for Courses?
 nav_section: FAQ
-weight: 404
+weight: 408
 draft: false
 ---
 Absolutely! Compendium<sup>360</sup> provides eCommerce capabilities that allow users to charge for Course enrollments, Live Sessions, and Team enrollments.
