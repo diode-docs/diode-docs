@@ -32,4 +32,6 @@ Clients of ACME Training Center receive a high-touch custom-branded experience w
 
 These are just two scenarios demonstrating the value of Sub Accounts. However, Sub Accounts can be modified and used in any number of ways for a vast variety of purposes.
 
-Have questions or interested in <a href="https://app.compendium360.com/users/sign_in?next_path=/sub_accounts" target="_blank" rel="noopener"><strong>setting up Sub Accounts</strong></a> for your organization?
+**Additional Resources:**
+
+* <a href="https://compendium360.docs.diode.io/docs/account-setup/sub-accounts-setup/" rel="nofollow">Sub Account Setup</a>
