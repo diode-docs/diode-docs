@@ -3,7 +3,7 @@ _schema: default
 title: Course Discussions (Forums)
 nav_title: Course Discussions (Forums)
 nav_section: Using
-weight: 0
+weight: 202
 draft: false
 ---
 #### **OVERVIEW**
