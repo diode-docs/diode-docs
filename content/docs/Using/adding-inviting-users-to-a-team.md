@@ -6,7 +6,7 @@ nav_section: Using
 weight: 201
 draft: false
 ---
-There are several ways a User can be added to a Team. We'll take a look at the three most common ways in this article.
+There are several ways a user can be added to a Team. We'll take a look at the three most common ways in this article.
 
 1. Adding a User to a Team from Recruiting
 2. Inviting a New User to a Team Who has no Account or History On Your Platform
