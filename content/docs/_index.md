@@ -2,8 +2,8 @@
 _schema: default
 title: Compendium Overview
 nav_title: Compendium Overview
-nav_section: FAQ
-weight: 400
+nav_section:
+weight: 1
 draft: false
 ---
 Compendium360 combines a powerful candidate tracking tools with an easy to use learning management system (LMS) to make it simple for any business or organization to develop their people.
