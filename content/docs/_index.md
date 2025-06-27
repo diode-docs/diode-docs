@@ -2,7 +2,7 @@
 _schema: default
 title: Compendium Overview
 nav_title: Compendium Overview
-nav_section:
+nav_section: Overview
 weight: 1
 draft: false
 ---
