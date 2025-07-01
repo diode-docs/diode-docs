@@ -24,6 +24,6 @@ For example, you may have an Employee Handbook that is available to ALL Teams an
 
 Resources can also be shared with your Sub Accounts. To learn more about this, watch the video below.
 
-Video Coming Shortly
+{{< youtube id="c34CwdklYeo" autoplay="true" title="Managing Course Resources" >}}
 
 &nbsp;
