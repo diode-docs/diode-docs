@@ -18,4 +18,6 @@ This removes the necessity of providing each of your sub accounts a different lo
 
 If you still prefer to host a separate login page for each sub account, you can still do this.
 
-<a href="https://www.loom.com/share/ad32f044370745888fe26df8a1a020f2?t=58" target="_blank" rel="nofollow noopener">Watch the Branded Login Setup Video here.</a>
+{{< youtube id="KaCBjAivcn8" autoplay="true" title="Branded Login Page" >}}
+
+&nbsp;
