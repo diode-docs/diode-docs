@@ -1,7 +1,7 @@
 ---
 _schema: default
-title: How do I Switch Between Accounts? (Video)
-nav_title: How do I Switch Between Accounts? (Video)
+title: How do I Switch Between Accounts?
+nav_title: How do I Switch Between Accounts?
 nav_section: FAQ
 weight: 404
 draft: false
