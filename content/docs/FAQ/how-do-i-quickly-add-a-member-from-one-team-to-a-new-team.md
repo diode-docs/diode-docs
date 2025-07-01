@@ -6,7 +6,7 @@ nav_section: FAQ
 weight: 405
 draft: false
 ---
-Video Coming Soon
+{{< youtube id="YIT-J-DqPIA" autoplay="true" title="Add a Member" >}}
 
 You can easily add a Member who is already on one Team to another Team by using "Add User" in the Invitations tab of the Team you want to add the Member to.
 
