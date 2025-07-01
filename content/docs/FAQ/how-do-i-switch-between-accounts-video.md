@@ -6,7 +6,7 @@ nav_section: FAQ
 weight: 404
 draft: false
 ---
-Video Coming Soon
+{{< youtube id="7_JVSZSXQEg" autoplay="true" title="Switch Between Accounts" >}}
 
 If you have multiple Accounts you are part of on the Compendium<sup>360</sup> Platform, you can easily switch between accounts from the Account Switcher icon located at the top-right of your page.
 
