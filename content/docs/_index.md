@@ -25,7 +25,7 @@ Checkout the <a href="https://diodenetwork.io" target="_blank" rel="noopener">Di
 **System recommendations:**
 
 * OS that can run <a href="https://snapcraft.io/" target="_blank" rel="noopener">Snap packages </a>(Ubuntu supports Snap by default)
-* Publicly accessible IPv5 or IPv6 address with <a href="https://forum.diode.io/t/lite-node-ports/80" target="_blank" rel="noopener">open ports</a> (most data center VMs have this by default)
+* Publicly accessible IPv4 or IPv6 address with <a href="https://forum.diode.io/t/lite-node-ports/80" target="_blank" rel="noopener">open ports</a> (most data center VMs have this by default)
 * 2GB of RAM (some providers, like Linode, run OK on 1GB of RAM)
 
 > If you just want to use Diode, you don't need to run your own node (see the off-the-shelf [Diode Collab](https://diode.io/solutions/app) and the [CLI](https://diode.io/solutions/cli) ). However, if you DO want to run a node in the Diode Network, you've come to the right place!
