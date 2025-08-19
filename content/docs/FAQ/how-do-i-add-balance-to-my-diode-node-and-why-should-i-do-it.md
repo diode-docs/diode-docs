@@ -8,13 +8,12 @@ draft: false
 ---
 **How to add balance:**
 
-Just send DIODE tokens directly to your node address (visible on your node dashboard). The balance will appear there automatically.
+Just send $DIODE tokens directly to your node address (visible on your node dashboard). The balance will appear there automatically.
 
 **Why add balance (benefits):**
 
-* The network is transitioning to use DIODE balance to route traffic.,
-* Nodes with DIODE balance will have higher reputation and be prioritized in the routing algorithm.,
-* This is a precursor to node staking, which is under development.,
+* The network is transitioning to use $DIODE balance to route traffic.
+* Nodes with $DIODE balance will have higher reputation and be prioritized in the routing algorithm.
 
 **In short:**
 
