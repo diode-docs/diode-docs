@@ -20,3 +20,5 @@ To register your Zone:
 1. Go to the Diode Referrals Zone.
 2. Open a chat with the Registrar Bot.
 3. Type: register zone \[paste your Zone ID here\]
+
+If you want additional assistance from the Registrar Bot, type "help" and it will provide you with prompts and directions.
