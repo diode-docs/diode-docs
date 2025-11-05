@@ -6,7 +6,7 @@ nav_section: Troubleshooting
 weight: 10002
 draft: false
 ---
-If Diode Collab won't start on your system, it could be that the auto-update process failed. Despite the auto-update process using a checksum to validate the update was successful, there have been reports circa Q1 2023 that leads us to believe the process can still sometimes fail, resulting in Diode Collab not being able to load the correct system packages at startup.
+If Diode Collab won't start on your system, it could be that the auto-update process failed. Despite the auto-update process using a checksum to validate the update was successful, there have been intermittent reports that leads us to believe the process can still sometimes fail, resulting in Diode Collab not being able to load the correct system packages at startup.
 
 To fix, you need to remove the update folder and allow it to re-populate via auto-update by doing the following:
 
