@@ -42,19 +42,21 @@ Drives are anchored on the blockchain, so you should see an "Operation" icon app
 
 ## Leaving a Drive
 
-Access the Drive Settings area, scroll to the bottom, and click "Leave Drive" in order to leave a drive. If you are the owner, you will not be able to leave the Drive unless all other members are removed first.
+In order to leave a drive, access [the Drive Settings area](#configuring-the-drive), scroll to the bottom, and click "Leave Drive". If you are the owner, you will not be able to leave the Drive unless all other members are removed first.
 
-Leaving a drive as the owner is the same as deleting a drive - it will become unrecoverable and files will be deleted.
+Leaving a drive as the owner is the same as [deleting a drive](#deleting-a-drive) - it will become unrecoverable and files will be deleted.
 
 ## Working with files in the Drive
 
-Multi-Drive Files work just like single Drive files.  See the "**Working with Files**" article for details.
+Multi-Drive files work just like single-Drive files.  See the "**Working with Files**" article for details.
 
 ## Configuring the Drive
 
+Drive settings can be accessed by accessing the Drive and clicking the gear icon to the right of the breadcrumb, or by viewing the All Drives list, selecting a drive, and clicking the gear icon in the upper right.
+
 Although every Member can access some of the Drive settings, only Owners and Admins can configure critical Drive capabilities.
 
-Every Drive has its own settings.  Drive settings can be accessed by accessing the Drive and clicking the gear icon to the right of the breadcrumb, or by viewing the All Drives list, selecting a drive, and clicking the gear icon in the upper right.
+Every Drive has its own settings.
 
 ### Settings that are inherited from the Zone
 
