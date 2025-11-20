@@ -3,7 +3,7 @@ _schema: default
 title: Chat With Other Team Members
 nav_title: Chatting
 nav_section: Features
-weight: 200
+weight: 201
 draft: false
 ---
 Diode Collab is collaborative software, so communication with other Team Members is important. That's why Diode Collab comes with its own chat function where you can chat with other Team Members in your shared Zone.
