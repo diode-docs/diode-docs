@@ -2,7 +2,7 @@
 _schema: default
 title: Chat Commands
 nav_title: Chat Commands
-nav_section: Features
+nav_section: For Your IT Admin
 weight: 204
 draft: false
 ---
