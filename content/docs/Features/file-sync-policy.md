@@ -23,8 +23,4 @@ This policy is useful for Zone owners who wish to minimize the risk of file dele
 
 ![](/uploads/image-199.png)
 
-### Coming Soon:
-
-An additional mode, **Off**, will be introduced in an upcoming release. This will fully disable file sync for members, including uploads.
-
-&nbsp;
+###
