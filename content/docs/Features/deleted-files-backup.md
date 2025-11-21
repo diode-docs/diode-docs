@@ -3,7 +3,7 @@ _schema: default
 title: Deleted Files Backup
 nav_title: Deleted Files Backup
 nav_section: Features
-weight: 209
+weight: 208
 draft: false
 ---
 A popular use case for Diode Collab is to use it as an <a href="https://app.docs.diode.io/docs/using/backup-your-confidential-files/" target="_blank" rel="noopener"><strong>always-on remote backup system</strong></a>. An important part of this capability is protecting the Zone from accidental file deletions by Team Members - this can be done via the "Deleted Files Backup" option in a Zone's Options:

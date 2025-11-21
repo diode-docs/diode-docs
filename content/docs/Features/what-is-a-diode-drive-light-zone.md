@@ -3,7 +3,7 @@ _schema: default
 title: Diode Collab Light Zone
 nav_title: Light Zone
 nav_section: Features
-weight: 207
+weight: 209
 draft: false
 ---
 A Diode Collab "Light Zone" is a term used when you set the Zone's "File Syncing" option to "Disabled" in Diode Collab.
