@@ -3,7 +3,7 @@ _schema: default
 title: Take Secure Notes with Diode Collab
 nav_title: Secure Notes
 nav_section: Features
-weight: 212
+weight: 205
 draft: false
 ---
 One of the use cases for Diode Collab is <a href="https://diode.io/diode%20drive/secure-evernote-alternative-22171/" target="_blank" rel="noopener"><strong>taking secure notes</strong></a>.
