@@ -3,7 +3,7 @@ _schema: default
 title: Pricing and Plans
 nav_title: Pricing and Plans
 nav_section: Features
-weight: 206
+weight: 213
 draft: false
 ---
 A Diode Collab Zone will have different features depending on the plan it is subscribed to.  When a Zone is created, it starts on the default free Nomad plan.  If desired, it can be upgraded to a higher plan via the Settings page.
