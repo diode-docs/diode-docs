@@ -3,7 +3,7 @@ _schema: default
 title: Languages in Diode Collab
 nav_title: Languages
 nav_section: Features
-weight: 209
+weight: 210
 draft: false
 ---
 If you're wondering how to get different languages on Diode Collab, you're in the right place.
