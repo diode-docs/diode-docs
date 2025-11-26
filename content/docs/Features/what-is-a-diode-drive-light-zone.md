@@ -3,7 +3,7 @@ _schema: default
 title: File Syncing
 nav_title: File Syncing
 nav_section: Features
-weight: 209
+weight: 203
 draft: false
 ---
 Your Diode Collab app can be configured to sync files from the Zone to your local device.  File syncing is end to end encrypted, and the files are never stored on a server or device that you do not control.

@@ -3,7 +3,7 @@ _schema: default
 title: Diode Collab's Unlimited Storage
 nav_title: Unlimited Storage
 nav_section: Features
-weight: 208
+weight: 204
 draft: false
 ---
 [**Diode Collab**](https://diode.io/products/d-drive) is a peer to peer collaboration, file sharing, and backup system that relies on the computers, servers, and other storage devices that you, or a trusted collaborator, control (an information "self custody" solution).

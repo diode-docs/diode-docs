@@ -3,7 +3,7 @@ _schema: default
 title: Private Drives
 nav_title: Private Drives
 nav_section: Features
-weight: 200
+weight: 202
 draft: false
 ---
 Diode Collab's "Private Drives" feature allows organizations to control access to information so that it can only be accessed to certain members.
