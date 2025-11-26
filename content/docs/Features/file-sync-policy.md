@@ -3,7 +3,7 @@ _schema: default
 title: File Sync Policy
 nav_title: File Sync Policy
 nav_section: Features
-weight: 214
+weight: 204
 draft: false
 ---
 The **File Sync Policy** setting allows Zone administrators to control how file synchronization works for members within their Zone. Administrators can choose from the following sync modes:
