@@ -3,7 +3,7 @@ _schema: default
 title: ZTN - Regional Tunnels
 nav_title: ZTN - Regional Tunnels
 nav_section: Features
-weight: 207
+weight: 208
 draft: false
 ---
 You can use Diode to access websites from any region in the world, no matter where you are sitting.  Under the hood, making this possible, is Diode's Zero Trust Network - so, we call this  "ZTN"!

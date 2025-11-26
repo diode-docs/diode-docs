@@ -3,7 +3,7 @@ _schema: default
 title: Working with multiple profiles / accounts
 nav_title: Multiple Accounts
 nav_section: Features
-weight: 207
+weight: 209
 draft: false
 ---
 Since Diode version 1.12.0, you can use more than one account by leveraging the "Multi Profile" feature. This feature allows you to create multiple usernames and choose which username to use for which Zones. This allows you to keep your username isolated to just the Zones you interact with through that account.
