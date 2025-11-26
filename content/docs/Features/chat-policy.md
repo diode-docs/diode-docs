@@ -3,7 +3,7 @@ _schema: default
 title: Chat Policy
 nav_title: Chat Policy
 nav_section: Features
-weight: 215
+weight: 202
 draft: false
 ---
 The **Chat Policy** setting enables Zone administrators to control how members interact through chat within their Zone. This includes options for managing:
