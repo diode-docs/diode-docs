@@ -3,7 +3,7 @@ _schema: default
 title: Diode Collab Backup Codes
 nav_title: Backup Codes
 nav_section: Features
-weight: 210
+weight: 211
 draft: false
 ---
 Most of us are used to creating accounts for an application or website by creating a username and password. We're used to the application/website keeping our data, and being able to ask their customer support to reset the password if we forget it. However, Diode Collab doesn't work like that - Diode has no access to your credentials or data, and Diode Collab uses a "Backup Code" to secure access to your Account.
