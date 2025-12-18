@@ -6,8 +6,6 @@ nav_section: Using
 weight: 226
 draft: false
 ---
-# Deleting Files
-
 **From Drive**
 
 Select the file you want to delete by clicking the checkbox on the side of the file. Then, select the trash icon in the upper righthand corner.
