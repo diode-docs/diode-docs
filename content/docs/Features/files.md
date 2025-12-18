@@ -18,7 +18,7 @@ Open Diode Collab (also called Diode Drive), select a Zone, and create a sub-fol
 
 Create share links for specific files or folders with customizable permissions, allowing recipients to download or upload via password-protected web browsers without IT setup. Team members added to a Zone automatically sync files, ensuring availability even offline.​
 
-## [Opening and Managing Files](https://app.docs.diode.io/docs/using/file-editors/)
+##  [Opening and Managing Files](https://app.docs.diode.io/docs/using/file-editors/)
 
 Click the orange box icon next to a Zone or folder in Diode Collab to open it directly in your file explorer for easy access and editing. Use features like bookmarking upload pages or adding to home screen for quick mobile access, and invite devices like Raspberry Pi as team members for remote backups.​
 
