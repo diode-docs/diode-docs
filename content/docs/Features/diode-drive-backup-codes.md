@@ -22,7 +22,7 @@ The most secure way to save your Backup Code is to print it or write it down. Ho
 
 In order to use your Backup Code to restore your Account, install Diode Collab and, on the welcome screen, click "Log In":
 
-![](/uploads/image-88.png)
+![](/uploads/screenshot-2025-12-18-at-12-55-40-pm-copy.png)
 
 On the Log In page, type your Username into the box and click the Log In button:
 
@@ -30,7 +30,7 @@ On the Log In page, type your Username into the box and click the Log In button:
 
 To restore your Account with the Backup Code, click "Restore Account" at the bottom:
 
-![](/uploads/image-90.png)
+![](/uploads/screenshot-2025-12-18-at-12-56-47-pm-2.png)
 
 Finally, type or paste (ctrl-V or command-V) your Backup Code into the boxes and click the "Continue" button:
 
