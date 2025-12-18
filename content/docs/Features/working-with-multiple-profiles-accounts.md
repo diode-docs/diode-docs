@@ -18,11 +18,11 @@ To make use of this feature, you will need to be [**all signed up with your firs
 
 After you are signed up and signed in, you will see your profile image / circle in the upper right side of the app:
 
-![](/uploads/image-173.png)
+![](/uploads/screenshot-2025-12-18-at-12-54-51-pm-copy.png)
 
 Go ahead and click that - a drop down menu will appear (the Profile menu) - in the profile menu, at the very bottom there is an account selector:
 
-![](/uploads/image-174.png)
+![](/uploads/screenshot-2025-12-18-at-12-54-51-pm.png)
 
 Go ahead and click that and then click "+ Add Account":
 
@@ -30,21 +30,21 @@ Go ahead and click that and then click "+ Add Account":
 
 That will restart the app and take you to the "Create an Account" screen where you can either add a brand-new account by signing up, or, if you want to Log In to an existing account, you can click "Log In" to do so.
 
-![](/uploads/image-176.png)
+![](/uploads/screenshot-2025-12-18-at-12-55-40-pm.png)
 
-If you choose to Log In, note that you can simply select your original account from the drop-down menu if you wish to abort the process of adding another account:
+If you choose to "Log In," note that you can simply select your original account from the drop-down menu if you wish to abort the process of adding another account:
 
-![](/uploads/image-177.png)
+![](/uploads/screenshot-2025-12-18-at-12-56-47-pm.png)
 
 Otherwise, once you've added a new account or logged into a second account, you will be taken back to the app and now you can select the original account to switch back to, or add yet another account:
 
-![](/uploads/image-178.png)
+![](/uploads/screenshot-2025-12-18-at-1-16-13-pm.png)
 
 ### **Remove accounts**
 
 In order to remove an account, you need to first load the account you want to remove and then go your profile settings area:
 
-![](/uploads/image-179.png)
+![](/uploads/screenshot-2025-12-18-at-12-54-51-pm-copy-2.png)
 
 and scroll down and click "Sign Out":
 
@@ -54,7 +54,7 @@ That will open another page with some very pertinent information (make a copy of
 
 If you want to log back into a remaining account, click "Log In" and then select the account to load from the drop down:
 
-![](/uploads/image-181.png)
+![](/uploads/screenshot-2025-12-18-at-12-56-47-pm-1.png)
 
 Otherwise, you'll need to sign up as a new user, or [**restore an account via back-up code**](https://app.docs.diode.io/docs/features/diode-drive-backup-codes/), or Log In as a [**Linked Device.**](https://app.docs.diode.io/docs/using/linked-devices/)
 
