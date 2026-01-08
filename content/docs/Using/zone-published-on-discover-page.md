@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Zone Published on Discover Page
-nav_title: Zone on Discover Page
+nav_title: Zones on Discover Page
 nav_section: Using
 weight: 208
 draft: false
