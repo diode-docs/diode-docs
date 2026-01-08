@@ -3,25 +3,74 @@ _schema: default
 title: Files
 nav_title: Files
 nav_section: Features
-weight: 206
-draft: false
+weight: 226
+draft: true
 ---
-## Using Files in Diode Collab
+# Sync Modes
 
-Diode Collab enables secure, end-to-end encrypted file sharing, collaboration, and backup across devices like computers, phones, and Raspberry Pi without relying on cloud servers.​
+**For The Whole Zone**
 
-## Uploading Files from Phone to Computer
+*Only admins can perform this action for  Zones with multiple people.*
 
-Open Diode Collab (also called Diode Drive), select a Zone, and create a sub-folder by clicking the box arrow icon. Check the box next to the folder, click the share icon, enable "Can Upload", and save to generate a QR code. Scan the QR code with your phone's browser to access a web portal for selecting and automatically uploading files, supporting any size or type.​
+Navigate to the Zone's settings.
 
-## Sharing Files Securely
+![](/uploads/settings.png)
 
-Create share links for specific files or folders with customizable permissions, allowing recipients to download or upload via password-protected web browsers without IT setup. Team members added to a Zone automatically sync files, ensuring availability even offline.​
+Scroll to the "Features and Add Ons" section and select "File Sync Policy."
 
-## [Opening and Managing Files](https://app.docs.diode.io/docs/using/file-editors/)
+![](/uploads/file-sync-policy.png)
 
-Click the orange box icon next to a Zone or folder in Diode Collab to open it directly in your file explorer for easy access and editing. Use features like bookmarking upload pages or adding to home screen for quick mobile access, and invite devices like Raspberry Pi as team members for remote backups.​
+Select preference from the drop down.
 
-## Advanced Features
+![](/uploads/screenshot-2025-11-24-at-9-39-07-pm.png)
 
-Always-on canisters store files, messages, and attachments securely for constant availability, with replication across team members' devices. For headless setups like Raspberry Pi, install Diode Collab, configure directories, and enable services for automatic syncing
+**For Personal Settings Within a Zone**
+
+Navigate to the sync setting for the Zone at the top right of the Zone.
+
+![](/uploads/personal-zone-sync.png)
+
+Select preference from the drop down.
+
+![](/uploads/drop-down-preference.png)
+
+**Other Helpful Articles:**
+
+[File Sync Policy](https://app.docs.diode.io/docs/features/file-sync-policy/)
+
+# Adding Files
+
+**Select From +**
+
+![](/uploads/select-from-plus-2.png)
+
+Navigate files you want to upload from your device from here.
+
+![](/uploads/select-from-device.png)
+
+**Drag & Drop**
+
+Select the file you want to put in your Zone from your device, and drop it into the folder you want.
+
+![](/uploads/drag-and-drop-file.png)
+
+![](/uploads/drag-and-drop-file-complete.png)
+
+# Deleting Files
+
+**From Drive**
+
+Select the file you want to delete by clicking the checkbox on the side of the file. Then, select the trash icon in the upper righthand corner.
+
+![](/uploads/delete-file.png)
+
+Confirm delete.
+
+![](/uploads/confirm-delete.png)
+
+# [Editing Files](https://app.docs.diode.io/docs/features/markdown-editing-basics/)
+
+1. Assumptions about sync mode → explain how a local device’s sync mode works (3 modes, but may not be able to be modified if the file sync policy doesn’t allow it) and also link to file sync policy article and “Files” feature article
+2. Adding files → explain the four ways to add **2/4 done**
+3. Deleting files → explain what must be done to delete files from **drive** vs. delete files from device
+4. **Editing files → link to the md editor article**
