@@ -4,7 +4,7 @@ title: Serverless WireGuard
 nav_title: Serverless WireGuard
 nav_section: Using
 weight: 5
-draft: true
+draft: false
 ---
 Diode supports serverless WireGuard without the vendor risk:
 
