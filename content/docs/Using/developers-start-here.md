@@ -12,6 +12,14 @@ Hi - we're glad you want to start using the [**Diode Network**](https://diode.io
 
 The Diode Network is a bandwidth network.  You can use it to establish point-to-point TCP or UDP connections that are bridged by Diode Network relay nodes.  All bandwidth on the network requires a sponsor and most people use Diode's development fleet contract to get going (it is the default sponsor in the CLI and the ZTNA console).
 
+### WireGuard and Edgev2RPC
+
+TCP connections over the Diode Network use Diode's [Edgev2RPC protocol](https://network.docs.diode.io/docs/features/edgev2-rpc/).  These connections are all end to end encrypted with each client's secp256k1 compatible key.
+
+UDP connections over the Diode Network are initially routed via [Edgev2RPC](https://network.docs.diode.io/docs/features/edgev2-rpc/), and once routed produce a STUN/TURN server result that can be used by the calling peer to establish a connection with the target peer.  Although any UDP traffic can be transferred, Diode has integrated closely with WireGuard as our recommended method of secure UDP connections.  The Diode CLI and the ZTNA Console have opinionated WireGuard support.
+
+“WireGuard” and the “WireGuard” logo are registered trademarks of Jason A. Donenfeld.​
+
 ### CLI
 
 The Diode CLI is a great tool for connecting server systems, server-based apps, and IT personnel machines.
