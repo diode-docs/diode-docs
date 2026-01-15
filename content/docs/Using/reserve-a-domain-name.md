@@ -3,7 +3,7 @@ _schema: default
 title: Reserve a routable Blockchain Name
 nav_title: Reserve a routable Blockchain Name
 nav_section: Using
-weight: 4
+weight: 20
 draft: false
 ---
 Addresses on the Diode Network use the same format as <a href="https://ethereum.github.io/yellowpaper/paper.pdf" target="_blank" rel="noopener"><strong>Ethereum public addresses</strong></a> - while excellent for unique identification, they are not particularly memorable to humans. The Diode Network has a Blockchain Name System (BNS) - a decentralized smart-contract based Domain Name System - that allows the association of a human recognizable name with a Diode Network address. If a BNS name is configured for an address, it can be used in place of the address.
