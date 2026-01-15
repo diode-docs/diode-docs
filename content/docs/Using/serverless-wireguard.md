@@ -6,11 +6,11 @@ nav_section: Using
 weight: 5
 draft: false
 ---
-Diode supports serverless WireGuard without the vendor risk:
+Diode supports serverless secure WireGuard: peer to peer WireGuard that doesn't require a star topology server, and that doesn't have vendor risk on the control plane. It leverages:
 
 * Standard WireGuard clients and software
 * Blockchain-based encrypted control plane
-* Network of UDP relays
+* Diode Network's UDP relays
 
 This article demonstrates how to connect two or more devices via WireGuard through the Diode Network, even if none of them have a publicly accessible IP address.
 
@@ -52,7 +52,7 @@ Then, you can choose which Assets you'd like to connect to which other Assets by
 
 Examples below.
 
-**Example 1: Connect two Assets (A and B) to each other via Wireguard**
+**Example: Connect two Assets (A and B) to each other via Wireguard**
 
 Asset A Client ID: 0xe6a70432A8BBbCB9Ce019C9a9c82fd0F651bE12a<br>Asset B Client ID: 0x13a45432A8BBbCB9Ce019C9a9c82fd0F651Eb131
 
