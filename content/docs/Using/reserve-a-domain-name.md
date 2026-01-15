@@ -1,7 +1,7 @@
 ---
 _schema: default
-title: Reserve a Domain Name
-nav_title: Reserve a Domain Name
+title: Reserve a routable Blockchain Name
+nav_title: Reserve a routable Blockchain Name
 nav_section: Using
 weight: 4
 draft: false
