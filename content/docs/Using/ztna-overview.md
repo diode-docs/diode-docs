@@ -3,7 +3,7 @@ _schema: default
 title: ZTNA Console
 nav_title: ZTNA Console
 nav_section: Using
-weight: 4
+weight: 3
 draft: false
 ---
 &nbsp;
