@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: 'Developers (Network, CLI): Start Here!'
+title: Start Here!
 nav_title: Start Here
 nav_section: Using
 weight: 3
