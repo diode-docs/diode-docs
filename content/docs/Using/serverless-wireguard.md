@@ -52,8 +52,6 @@ In the ZTNA Console, you can configure the WireGuard configuration for each asse
 
 Then, you can choose which Assets you'd like to connect to which other Assets by assigning the "Connect to" tags to each Asset.
 
-Examples below.
-
 **Example: Connect two Assets (A and B) to each other via Wireguard**
 
 Asset A Client ID: 0xe6a70432A8BBbCB9Ce019C9a9c82fd0F651bE12a<br>Asset B Client ID: 0x13a45432A8BBbCB9Ce019C9a9c82fd0F651Eb131
