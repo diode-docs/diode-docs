@@ -1,9 +1,9 @@
 ---
 _schema: default
-title: Configure Custom Domain Name
-nav_title: Configure Custom Domain Name
-nav_section: Using
-weight: 5
+title: Custom Domain Name Resolution
+nav_title: Custom Domain Name Resolution
+nav_section: Features
+weight: 15
 draft: false
 ---
 Diode can be used to host content on a custom web2 <a href="https://en.wikipedia.org/wiki/Top-level_domain" target="_blank" rel="noopener"><strong>Top Level Domain</strong></a> (TLD) - similar to <a href="https://pages.github.com/" target="_blank" rel="noopener"><strong>github pages</strong></a>. This enables exciting possibilities of edge hosting for websites and other TLD-centric content.
