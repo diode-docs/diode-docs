@@ -6,7 +6,9 @@ nav_section: Using
 weight: 5
 draft: false
 ---
-Diode supports serverless secure WireGuard: peer to peer WireGuard that doesn't require a star topology server, and that doesn't have vendor risk on the control plane. It leverages:
+Diode supports serverless secure WireGuard - peer to peer WireGuard that doesn't require a star topology server, and that doesn't have vendor risk on the control plane.
+
+It leverages:
 
 * Standard WireGuard clients and software
 * Blockchain-based encrypted control plane
