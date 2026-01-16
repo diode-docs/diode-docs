@@ -14,7 +14,7 @@ Share any file within your Zone to a channel or DM by selecting the file and cli
 
 ![](/uploads/select-file-and-share.png)
 
-![](/uploads/select-chat-to-send-1.png)
+![](/uploads/select-chat-to-send-medium.jpeg)
 
 ## Sending Files in Chat from Device
 
@@ -50,9 +50,9 @@ Navigate files you want to upload from your device from here.
 
 Select the file you want to put in your Zone from your device, and drop it into the folder you want.
 
-![](/uploads/drag-and-drop-file.png)
+![](/uploads/drag-and-drop-file-1.png)
 
-![](/uploads/drag-and-drop-file-complete.png)
+&nbsp;
 
 ## What's Available to Different Plans
 
