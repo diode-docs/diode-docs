@@ -3,7 +3,7 @@ _schema: default
 title: Create a home page (About page) for Your Zone
 nav_title: Create a Home Page
 nav_section: Using
-weight: 207
+weight: 208
 draft: false
 ---
 You can create a custom home page (aka About page) for your Zone to give Team Members immediate access to key information about the Zone. The About page becomes the default landing page when the Zone icon is clicked and when the Zone is opened from the task bar menu.
