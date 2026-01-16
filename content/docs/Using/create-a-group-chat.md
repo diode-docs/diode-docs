@@ -3,7 +3,7 @@ _schema: default
 title: Create a Group Chat
 nav_title: Group Chat
 nav_section: Using
-weight: 207
+weight: 208
 draft: false
 ---
 Diode Collab supports fully decentralized, end to end encrypted <a href="https://app.docs.diode.io/docs/features/chat-with-other-team-members/" target="_blank" rel="noopener"><strong>direct messaging</strong></a> and group chat channels.

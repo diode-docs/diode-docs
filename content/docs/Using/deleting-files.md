@@ -3,7 +3,7 @@ _schema: default
 title: Deleting Files
 nav_title: Deleting Files
 nav_section: Using
-weight: 226
+weight: 207
 draft: false
 ---
 **From Drive**
