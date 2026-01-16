@@ -34,7 +34,25 @@ If someone you want to share a file with doesn’t have Diode Collab, you can ea
 
 ![](/uploads/secure-share-link.png)
 
-&nbsp;
+![](/uploads/link-has-been-enabled-2.png)
+
+## Adding Files
+
+**Option 1: Select From +**
+
+![](/uploads/select-from-plus-2.png)
+
+Navigate files you want to upload from your device from here.
+
+![](/uploads/select-from-device.png)
+
+**Option 2: Drag & Drop**
+
+Select the file you want to put in your Zone from your device, and drop it into the folder you want.
+
+![](/uploads/drag-and-drop-file.png)
+
+![](/uploads/drag-and-drop-file-complete.png)
 
 ## What's Available to Different Plans
 
