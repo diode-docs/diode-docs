@@ -54,6 +54,8 @@ Select the file you want to put in your Zone from your device, and drop it into 
 
 &nbsp;
 
+![](/uploads/drag-and-drop-file-complete-1.png)
+
 ## What's Available to Different Plans
 
 | [Plan](https://app.docs.diode.io/docs/features/pricing-and-plans/) | **Description** |
