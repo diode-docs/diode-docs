@@ -6,6 +6,8 @@ nav_section: FAQ
 weight: 20034
 draft: false
 ---
+Registering your Zone is after you have downloaded Diode Collab, set up an account, and created your Zone.
+
 To register your Zone, you will need to be enrolled in the [Diode Referral Program](https://diode.foundation/docs/programs/ambassador_registration_program.html).
 
 First, find your Zone ID:
