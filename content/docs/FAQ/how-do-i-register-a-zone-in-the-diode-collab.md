@@ -6,9 +6,9 @@ nav_section: FAQ
 weight: 20034
 draft: false
 ---
-To register your Zone, you will need the Zone ID.
+To register your Zone, you will need to be enrolled in the [Diode Referral Program](https://diode.foundation/docs/programs/ambassador_registration_program.html).
 
-To find your Zone ID:
+First, find your Zone ID:
 
 1. Open your Zone.
 2. Click the gear icon.
