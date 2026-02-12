@@ -20,7 +20,7 @@ Checkout the <a href="https://diodenetwork.io" target="_blank" rel="noopener">Di
 
 * You can see your node on the <a href="https://diode.io/network" target="_blank" rel="noopener">overall network map</a>.  Nodes that are nearest to users and devices will attract more bandwidth.
 * To boost your node's rewards from the Diode Foundation, check out the foundation's <a href="https://diode.foundation/docs/programs/ambassador_registration_program.html" target="_blank" rel="noopener">referral program</a> and, importantly, its <a href="https://diode.foundation/docs/programs/bandwidth_growth_program.html" target="_blank" rel="noopener">bandwidth growth program</a>.
-* For debugging, visit the <a href="https://forum.diode.io/c/lite-node-category/7" target="_blank" rel="noopener">forum's lite node category</a>, or <a href="https://discord.gg/qdGCAKJdHs" target="_blank" rel="noopener">reach out via Discord</a>.
+* For debugging, visit the <a href="https://forum.diode.io/c/lite-node-category/7" target="_blank" rel="noopener">forum's lite node category</a>, or <a href="https://discord.gg/qdGCAKJdHs" target="_blank" rel="noopener">reach out via Discord</a>, [Telegram](https://t.me/diode_chain), or the[Diode Community Zone](https://diode.io/joinzone/?invite=1MQKGI_TUYpNksoAAK6TSynBPpviy5MPgDRyTiO7YuGh5_H5sHDN9VIB1diC).
 
 **System recommendations:**
 
