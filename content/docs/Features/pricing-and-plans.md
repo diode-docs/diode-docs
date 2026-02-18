@@ -14,7 +14,7 @@ You can upgrade a Zone by purchasing a plan - when you purchase a plan, you will
 
 Here is a video demonstrating upgrading a Zone's plan:
 
-{{< youtube id="UnDEh9cKxm8" title="Change Billing Plan" >}}
+{{< youtube id="Kw_cK1RbQoo" title="View Plans in Diode Collab" >}}
 
 ### **Plans and Features**
 
