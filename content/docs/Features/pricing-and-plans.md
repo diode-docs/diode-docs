@@ -10,9 +10,9 @@ A Diode Collab Zone will have different features depending on the plan it is sub
 
 ### **How to Upgrade**
 
-You can upgrade a Zone by purchasing a plan - when you purchase a plan, you will be emailed a receipt code that can be entered into the Zone to upgrade it.
+You can upgrade a Zone by purchasing a plan in Diode Collab.
 
-Here is a video demonstrating upgrading a Zone's plan:
+Here is a video demonstrating how to upgrade a Zone's plan:
 
 {{< youtube id="Kw_cK1RbQoo" title="View Plans in Diode Collab" >}}
 
