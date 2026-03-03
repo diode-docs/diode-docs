@@ -14,7 +14,7 @@ You can upgrade a Zone by purchasing a plan in Diode Collab.
 
 Here is a video demonstrating how to upgrade a Zone's plan:
 
-{{< youtube id="Kw_cK1RbQoo" title="View Plans in Diode Collab" >}}
+{{< youtube id="dZZtM7GhsN4" title="View Plans in Diode Collab" >}}
 
 ### **Plans and Features**
 
