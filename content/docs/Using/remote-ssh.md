@@ -83,7 +83,7 @@ If everything works fine we recommend to <a href="https://cli.docs.diode.io/rasp
 
 ## Other infos
 
-##### **More details about "protected"**
+### **More info about "protected"**
 
 You can use the "protected" mode to publish SSH. This restricts access to only the systems authorized for the same Fleet Contract as the SSH server system belongs to.
 
