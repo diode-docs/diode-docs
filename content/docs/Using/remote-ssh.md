@@ -16,7 +16,7 @@ Have fun with this, and let use know in our [**T**]()[**elegram**](https://t.me/
 
 ## SSH via Diode ephemeral keys
 
-### **SSH Server Setup (diode publish -sshd)**
+### SSH Server Setup (diode publish -sshd)
 
 1\. Install the Diode CLI:
 
@@ -42,7 +42,7 @@ diode publish -sshd private:22:diode,0x711f0f2c5e9904925e345777b9500f1b70a4cc25
 * The "0x711f0f2c5e9904925e345777b9500f1b70a4cc25" is the allow list for which other devices you want to allow to SSH in - you could add other IDs or names separated by commas (no spaces)
 * Note the server's Client address (printed out when the CLI starts up) - that is the address that your clients will connect to in the next section.  For our example, the server's Client address is "0x13ca2702af7176f3120ab6f4d3cadcb20d00e1e5"
 
-### **SSH Client Setup (diode ssh)**
+### SSH Client Setup (diode ssh)
 
 1\. Install the Diode CLI:
 
@@ -83,7 +83,7 @@ If everything works fine we recommend to <a href="https://cli.docs.diode.io/rasp
 
 ## Other infos
 
-### **More info about "protected"**
+### More info about "protected"
 
 You can use the "protected" mode to publish SSH. This restricts access to only the systems authorized for the same Fleet Contract as the SSH server system belongs to.
 
@@ -97,7 +97,7 @@ Finally, you would run the Diode client on the SSH Server system to publish the 
 diode publish -protected 22:22
 ```
 
-### **Native SSH Client Usage**
+### Native SSH Client Usage
 
 On the SSH client device, you can also just use the built-in ssh command to remotely access your SSH server device with:
 
