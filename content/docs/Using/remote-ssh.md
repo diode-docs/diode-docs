@@ -12,23 +12,54 @@ Diode can be used to create a secure connection to a system implementing SSH wit
 
 Have fun with this, and let use know in our [**T**]()[**elegram**](https://t.me/diode_chain) channel if you have any feature requests!
 
-### **SSH Server Setup**
+### **SSH Server Setup (diode publish -sshd)**
 
-1\. Ensure that a local SSH server (sshd) is already running on your system, and that you have valid SSH credentials that allows you to SSH into the server. See here for an [**example**](https://cli.docs.diode.io/raspberry-pi/enable-ssh/) of enabling <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/" target="_blank" rel="noopener"><strong>SSH on a Raspberry Pi</strong></a>.
-
-2\. Install the most recent Diode Client
-
-3\. Open a terminal window and publish the SSH service through diode:
+1\. Install the Diode CLI:
 
 ```
-diode publish -public 22:22
+curl -Ssf https://diode.io/install.sh | bash
 ```
 
-4\. Copy the presented Client Address (see red box below). This is the primary identifier of your target device and will never change. You will need it in the next step.
+2\. SSH can only be published privately (allow list) or protected (to other devices in a fleet)
 
-![](/uploads/image-40.png)
+* This example uses private publication - you need to go get a list of devices, or group name, to allowlist.  The allowlist can use a list of Client addresses (e.g. 0xabc..123), BNS names, Diode Collab identity contracts, Diode Collab usernames, or Diode Collab zone names
+* Here, we will publish privately to a machine running the CLI with Client address 0x711f0f2c5e9904925e345777b9500f1b70a4cc25
 
-That's it - once Diode is running and publishing your port, you can now SSH into the system from anywhere in the world.
+3\. Open a terminal window / shell
+
+4\. Run the Diode CLI sshd service:
+
+```
+diode publish -sshd private:22:diode,0x711f0f2c5e9904925e345777b9500f1b70a4cc25
+```
+
+* You can choose the Diode Client address port to publish SSH on - we are using the "typical" port 22
+* The "diode" is the username on the server - yours might be "root" or "myuser" or whatever
+* The "0x711f0f2c5e9904925e345777b9500f1b70a4cc25" is the allow list for which other devices you want to allow to SSH in - you could add other IDs or names separated by commas (no spaces)
+* Note the server's Client address (printed out when the CLI starts up) - that is the address that your clients will connect to in the next section.  For our example, the server's Client address is "0x13ca2702af7176f3120ab6f4d3cadcb20d00e1e5"
+
+### **SSH Client Setup (diode ssh)**
+
+1\. Install the Diode CLI:
+
+```
+curl -Ssf https://diode.io/install.sh | bash
+```
+
+2\. Open a terminal window
+
+3\. Verify your Diode CLI's Client address is in the server's allow list - you can type "diode time" to see your Client address
+
+4\. SSH in!
+
+```
+diode ssh diode@0x13ca2702af7176f3120ab6f4d3cadcb20d00e1e5.diode
+```
+
+* The "diode" is the username on the server
+* The "0x13ca2702af7176f3120ab6f4d3cadcb20d00e1e5" is your server's Client address
+
+That's it!  As long as your CLI's device address is in the server's allowlist, or in a name that resolves to a list of devices containg your CLI's device address, you will be able to reach your device from anywhere in the world - all without publishing your SSH port on the public Internet!
 
 #### **Start Diode at Boot**
 
