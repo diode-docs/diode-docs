@@ -14,7 +14,7 @@ Diode can be used to create a secure connection to a system implementing SSH wit
 
 Have fun with this, and let use know in our [**T**]()[**elegram**](https://t.me/diode_chain) channel if you have any feature requests!
 
-## SSH via Diode managed keys
+## SSH via Diode ephemeral keys
 
 ### **SSH Server Setup (diode publish -sshd)**
 
