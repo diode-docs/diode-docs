@@ -16,7 +16,7 @@ Teams lose time navigating apps or misclicking wrong links. Deep links fix this 
 
 For Web3 tunneled access to private sites/dashboards, use Diode CLI (`diode publish -private 80:80,<authorized_address>`) or the [Diode Deployer](https://deployer.diode.link/), which is a web tool for wallet-based, private Vibe app deploys with no public exposure. Get the .diode address for use in bookmarks/deep links.
 
-##  ** ** [**Create Bookmarks**](https://app.docs.diode.io/docs/features/diode-bookmarks/)
+## [**Create Bookmarks**](https://app.docs.diode.io/docs/features/diode-bookmarks/)
 
 Bookmarks provide one-click launches from your Zone sidebar.
 
