@@ -8,15 +8,15 @@ draft: false
 ---
 Diode Collab acts as a secure tunneling browser for teams, enabling access to web apps via end-to-end encrypted tunnels (enterprise VPN-style) or regional exits (consumer VPN-style). This guide focuses on sharing launchable sessions through bookmarks and deep links in Markdown, websites, or browsers, assuming private content is published first.
 
-## **Why Deep Links Matter**
+## Why Deep Links Matter
 
 Teams lose time navigating apps or misclicking wrong links. Deep links fix this and can launch the exact tunneled browsing session (Web3 for private .diode sites, Web2 for geo-specific public sites). No app-switching, no manual config, perfect for distributed teams hitting private dashboards or region-locked tools.
 
-## **Publish Private Content First**
+## Publish Private Content First
 
 For Web3 tunneled access to private sites/dashboards, use Diode CLI (`diode publish -private 80:80,<authorized_address>`) or the [Diode Deployer](https://deployer.diode.link/), which is a web tool for wallet-based, private Vibe app deploys with no public exposure. Get the .diode address for use in bookmarks/deep links.
 
-## [**Create Bookmarks**](https://app.docs.diode.io/docs/features/diode-bookmarks/)
+## [Create Bookmarks](https://app.docs.diode.io/docs/features/diode-bookmarks/)
 
 Bookmarks provide one-click launches from your Zone sidebar.
 
@@ -32,11 +32,11 @@ Bookmarks provide one-click launches from your Zone sidebar.
 
 Edit anytime via Zone Settings &gt; Bookmarks.
 
-## **Launch via Zone Bookmarks**
+## Launch via Zone Bookmarks
 
 Click bookmark in sidebar → instant tunneled browser. Share the bookmark *name* for deep links below.
 
-## **Embed Deep Links**
+## Embed Deep Links
 
 Markdown example:
 
@@ -60,7 +60,7 @@ Get Zone ID from Settings &gt; Zone Identification; escape targets with % encodi
 
 Use in emails, Slack, or external sites: diode:// for direct encryption, https:// for regional exit (US West default).
 
-## **Pro Tips**
+## Pro Tips
 
 * Internal browser = max security (simple sites only); Brave = complex sites (but exit fully first).
 * Test links in Markdown previewers to confirm encoding.
