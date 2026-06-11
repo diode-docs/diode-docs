@@ -1,16 +1,14 @@
 ---
 _schema: default
-title: Diode API Docs
+title: Remote JSON-RPC API
 nav_title: Diode API Docs
 nav_section: For Your IT Admin
 weight: 307
 draft: false
 ---
-#
-
 The Diode Collab API is available from every Diode Collab instance, is device-wide, and is disabled by default.
 
-This is a <a href="https://www.jsonrpc.org/specification" target="_blank" rel="noopener"><strong>JSON-RPC 2.0</strong></a> API for automation and integrations. Requests must use `"jsonrpc": "2.0"` and include a `"method"` field.
+It is a <a href="https://www.jsonrpc.org/specification" target="_blank" rel="noopener"><strong>JSON-RPC 2.0</strong></a> API for automation and integrations. Requests must use `"jsonrpc": "2.0"` and include a `"method"` field.
 
 **Implementation:** `lib/ddrive_web/remote_rpc.ex` (HTTP), `lib/ddrive_web/rpc_ws.ex` (WebSocket extensions), routing in `lib/ddrive_web/remote_router.ex`.
 
