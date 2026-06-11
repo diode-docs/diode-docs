@@ -6,188 +6,392 @@ nav_section: For Your IT Admin
 weight: 307
 draft: false
 ---
-### **Enabling the Diode API**
+# Remote JSON-RPC API
 
-This API runs on every Diode Collab instance, and is disabled by default.
+The Diode Collab API is available from every Diode Collab instance, is device-wide, and is disabled by default.
 
-The API is device-wide. To enable the API on your device:
+This is a <a href="https://www.jsonrpc.org/specification" target="_blank" rel="noopener"><strong>JSON-RPC 2.0</strong></a> API for automation and integrations. Requests must use `"jsonrpc": "2.0"` and include a `"method"` field.
 
-1\. Open Diode Collab (version 1.10.7 or later)
+**Implementation:** `lib/ddrive_web/remote_rpc.ex` (HTTP), `lib/ddrive_web/rpc_ws.ex` (WebSocket extensions), routing in `lib/ddrive_web/remote_router.ex`.
 
-2\. Navigate to any Zone and any Channel, it doesn't matter which Channel
-
-3\. Send the following chat command to the Channel: `/sysconfig remote-api enable`.
-
-Messages that start with "/" are [**chat commands**](https://app.docs.diode.io/docs/features/chat-commands/). Chat commands and the automated responses to them don't send any data to the channel members, only the sender can see them, and they disappear after leaving the page.
-
-4\. Next, a token will need generated. To generate a token, send this chat command: `/sysconfig remote-api generate-token`
-
-5\. To view the newly generated token, use this command: `/sysconfig remote-api view-token`
-
-WARNING: When your API is enabled, anyone with this token can perform API functions on your behalf. Keep it a secret.
-
-6\. The API is now enabled device-wide and a token has been obtained. The device is now ready to accept API requests by whoever has the token. Here are some other helpful commands:
-
-* A) Regenerate Token (Note: This will replace the previous token):<br>`/sysconfig remote-api generate-token`
-* B) Disable API:<br>`/sysconfig remote-api disable`
-* C) API Status:<br>`/sysconfig remote-api status`
-* D) API Version:<br>`/sysconfig remote-api version`
-
-### **Calling the API (HTTP)**
-
-A valid request is an HTTP POST request containing the following two headers and a <a href="https://www.jsonrpc.org/specification#response_object" target="_blank" rel="noopener"><strong>JSON-RPC 2.0</strong></a> payload.
-
-There are two ways to reach the API endpoint:
-
-* Via the Diode Web2 Gateway (most convenient, use anywhere):<br>`https://<device_address>.diode.link/api/json_rpc`
-* Direct via Web3 (most secure, requires web3 pipe between caller and device where the API is enabled):<br>`http://<device_address>.diode/api/json_rpc`
-
-The "device\_address" can be found on the "About" page in Diode Collab, or by sending the `/info` chat command to any Channel.
-
-#### **Headers:**
-
-`Content-Type: application/json`
-
-`Authorization: Bearer <bearer_token>`
-
-#### **JSON-RPC 2.0 Payload Format:**
-
-`{"jsonrpc":"2.0","method":"<method>","params":["<param1>", "<param2>", ..., <paramN>], "id":N}`
-
-##### **Curl Example:**
-
-```
-curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <bearer_token>" -d '{"jsonrpc":"2.0","method":"<method>","params":["<param1>", "<param2>", ..., <paramN>], "id":N}' https://<device_address>.diode.link/api/json_rpc
-```
-
-You can use the following chat commands to get curl templates for the "send\_message" method. Please note that the second command will auto-populate the "zone\_id" and "channel\_id" for the specific channel the command is sent to; the "device\_address" will also be auto-populated.<br><br><code>/sysconfig remote-api template<br />/sysconfig remote-api example</code>
-
-### **Calling the API (WebSocket)**
-
-To use advanced methods such as "subscribe\_channel", the WebSocket API can be used. Once connected, the WebSocket payload must contain a valid <a href="https://www.jsonrpc.org/specification#response_object" target="_blank" rel="noopener"><strong>JSON-RPC 2.0</strong></a> method call. Authentication is done via the "authenticate" method when calling the WebSocket API . Once authenticated successfully, any method can be called.
-
-Like the HTTP API, there are two ways to reach the WebSockets API endpoint:
-
-* Via the Diode Web2 Gateway (most convenient, use anywhere):<br>`ws://<device_address>.diode.link/api/json_rpc/ws`
-* Direct via Web3 (most secure, requires web3 pipe between caller and device where the API is enabled):<br>`ws://<device_address>.diode/api/json_rpc/ws`
-
-Here is an <a href="https://app.docs.diode.io/pythonscript/diode-websocket-api-python-example-subscribe-channel/" target="_blank" rel="noopener"><strong>example of a python script</strong></a> calling the API via WebSockets.
-
-### **API Methods**
-
-Some of these methods required "zone\_id" and "channel\_id" parameters. To obtain these values, navigate to the target Channel in Diode Collab and send the `/info` chat command to that Channel. The "zone\_id" and "channel\_id" will be printed out, amongst other helpful information. Passing a <a href="https://network.docs.diode.io/docs/faq/what-is-bns/" target="_blank" rel="noopener"><strong>bns name</strong></a> (such as a Diode username) as the "channel\_id" is also valid.
-
-#### **"ping"**
-
-##### **Call**
-
-```
-{"jsonrpc":"2.0","method":"ping","id":1}
-```
-
-##### **Success Response**
-
-```
-{"jsonrpc":"2.0","result":"The RPC endpoint has been successfully contacted.","id":1}
-```
-
-#### **"send\_message"**
-
-##### **Call**
-
-```
-{"jsonrpc":"2.0","method":"send_message","params":["<zone_id>", "<channel_id>", "<message_text>"], "id":1}
-```
-
-##### **Success Response**
-
-```
-{"jsonrpc":"2.0","result":"Message sent","id":1}
-```
-
-#### **"subscribe\_channel" (WebSocket only)**
-
-##### **Call**
-
-```
-{"jsonrpc":"2.0","method":"subscribe_channel","params":["<zone_id>", "<channel_id>"], "id":1}
-```
-
-##### **Success Response**
-
-```
-{"jsonrpc":"2.0","result":"Subscribed","id":1}
-```
-
-##### **Incoming Message(s)**
-
-```
-{
-  "jsonrpc":"2.0",
-  "result":
-      {
-        "messages":
-          [
-            {
-              "attributes": {
-                "mentions": <peer_address>,
-                "reply": <unix_timestamp>,
-                "t": <hex>
-              },
-              "creation_time": <unix_timestamp>,
-              "edited_at": <unix_timestamp>,
-              "group_id": <channel_id>,
-              "message": <string>,
-              "reply_to": <message_object>,
-              "sender": {
-                "address": <sender_hex_address>,
-                "domain": <sender_bns_name>,
-                "nickname": <sender_nickname>
-                }
-            },
-            ...
-          ]
-      },
-  "id":1
-}
-```
-
-#### **"subscribe\_all\_channels\_in\_zone" (WebSocket only)**
-
-##### **Call**
-
-```
-{"jsonrpc":"2.0","method":"subscribe_all_channels_in_zone","params":["<zone_id>"], "id":1}
-```
-
-##### **Success Response**
-
-```
-{"jsonrpc":"2.0","result":"Subscribed","id":1}
-```
-
-##### **Incoming Message(s)**
-
-```
-# Same format as the "subscribe_channel" function.
-```
-
-#### **"authenticate" (WebSocket only)**
-
-##### **Call**
-
-```
-{"jsonrpc":"2.0","method":"authenticate","params":["<bearer_token>"], "id":1}
-```
-
-##### **Success Response**
-
-```
-{"jsonrpc":"2.0","result":"Authentication successful","id":1}
-```
-
-&nbsp;
+**Current API version:** returned in successful and error payloads as `data.api_version` (when present)—see `RemoteRPC.version/0` (currently **3\.4**).
 
 ---
 
-&nbsp;
+## Enablement and authentication
+
+1. **Enable the Remote API** on the host (chat: `/sysconfig remote-api enable`; token: `generate-token` / `view-token`).
+2. **Bearer token:** every **HTTP** request needs:
+
+   ```
+   Authorization: Bearer <your_remote_api_token>
+   ```
+
+   If the API is disabled or the token is missing/invalid, the server responds with **401** and a JSON body:
+
+   ```
+   {"error":"Unauthorized","reason":"..."}
+   ```
+3. **WebSocket** (`/api/json_rpc/ws`): connect first, then call **`authenticate`** with the token inside JSON-RPC `params` (see below). Until authenticated, only `authenticate` is accepted for JSON-RPC methods handled by the socket.
+
+---
+
+## Endpoints
+
+| **Transport** | **URL** | **Auth** |
+| --- | --- | --- |
+| **HTTP POST** | `/api/json_rpc` | `Authorization: Bearer …` |
+| **WebSocket** | `/api/json_rpc/ws` | `authenticate` method with `params.token` |
+
+Replace the host with the device’s Diode address, e.g. `https://<device_address>.diode.link/api/json_rpc` (as in chat help templates).
+
+---
+
+## Request shape (all methods)
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "<method_name>",
+  "params": { },
+  "id": 1
+}
+```
+
+* **`params`:** must be a **JSON object** (not an array).
+* **`id`:** optional for JSON-RPC; this server may return an empty HTTP body when `id` is omitted (see `rpc_respond?/2`).
+
+---
+
+## Response shape
+
+Success:
+
+```
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": ...
+}
+```
+
+Error (typical):
+
+```
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "error": {
+    "code": "-32602",
+    "message": "Invalid params",
+    "data": {
+      "error": "<atom_name>",
+      "details": "…",
+      "api_version": "3.4"
+    }
+  }
+}
+```
+
+Common JSON-RPC **`error.code`** strings from this API:
+
+| **Code** | **Meaning** |
+| --- | --- |
+| `-32600` | Invalid request (missing/invalid JSON-RPC envelope) |
+| `-32601` | Method not found, or method not allowed on this transport |
+| `-32602` | Invalid params (missing key, bad address, unknown zone, etc.) |
+| `-32603` | Internal / business error (send failed, forbidden role, etc.) |
+| `-32001` | Not authorized (WebSocket, before `authenticate`) |
+
+---
+
+## Shared parameters
+
+### `zone_id` (hex string)
+
+The **drive id** of the zone as `0x` + 40 hex characters. It must match a zone that exists on the host (`Model.App.path/1`). Used by: `send_message`, `list_zone_members`, `add_zone_member`, `remove_zone_member`, and WebSocket helpers that take a zone.
+
+### Resolving channels for `send_message`
+
+* **`channel_id`:** hex string (`0x` + 40 hex), a known group/channel in that zone.
+* **`user_name`:** BNS name; resolved to a DM channel with that user in the zone. <br>Provide **`channel_id` OR `user_name`**, not both as conflicting requirements—see implementation in `check_channel/2`.
+
+---
+
+## HTTP methods (`execute_rpc` / POST)
+
+These are routed through `DdriveWeb.RemoteRPC.execute_rpc/2` with source `:post_req`.
+
+### `ping`
+
+Connectivity check.
+
+**Params:** none required (empty object `{}`).
+
+**Example:**
+
+```
+curl -s -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $TOKEN" \
+  -d '{"jsonrpc":"2.0","method":"ping","params":{},"id":1}' \
+  https://<device>.diode.link/api/json_rpc
+```
+
+**Result (string):** `"The RPC endpoint has been successfully contacted."`
+
+---
+
+### `send_message`
+
+Send a chat message to a channel or DM in a zone.
+
+**Params:**
+
+| **Field** | **Type** | **Required** | **Description** |
+| --- | --- | --- | --- |
+| `zone_id` | string | yes | Zone drive id (hex) |
+| `message_text` | string | yes | Message body |
+| `channel_id` | string | one of channel | Group id (hex) |
+| `user_name` | string | one of channel | BNS name for DM |
+
+**Example (channel):**
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "send_message",
+  "params": {
+    "zone_id": "0x…",
+    "channel_id": "0x…",
+    "message_text": "Hello from JSON-RPC"
+  },
+  "id": 1
+}
+```
+
+**Result (string):** `"Message sent"`
+
+**Errors (`data.error`):** include `:invalid_zone_id`, `:zone_not_found`, `:param_key_not_found`, `:channel_not_found`, `:invalid_channel_id`, `:message_send_failed`, etc.
+
+---
+
+### `list_zone_members`
+
+List contract-backed team members for a zone.
+
+**Authorization:** caller must have **Owner** or **Admin** role in that zone (`Model.Folder.myrole/1`). Otherwise `data.error` is `:forbidden`.
+
+**Params:**
+
+| **Field** | **Type** | **Required** |
+| --- | --- | --- |
+| `zone_id` | string | yes |
+
+**Example:**
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "list_zone_members",
+  "params": { "zone_id": "0x…" },
+  "id": 1
+}
+```
+
+**Result (object):**
+
+```
+{
+  "members": [
+    {
+      "member_id": "0x…",
+      "role": "Owner",
+      "device_ids": ["0x…", "0x…"]
+    }
+  ]
+}
+```
+
+`role` is a short string (e.g. `Member`, `Admin`, `Owner`). `device_ids` are linked device addresses for that identity.
+
+---
+
+### `add_zone_member`
+
+Add a member to the zone using the same path as the Team UI (`Model.Membership.add_peer/3`: on-chain add, New Users group, subzone auto-add when applicable).
+
+**Authorization:** **Owner** or **Admin** only (`:forbidden` otherwise).
+
+**Params:**
+
+| **Field** | **Type** | **Required** | **Description** |
+| --- | --- | --- | --- |
+| `zone_id` | string | yes | Zone drive id (hex) |
+| `peer_id` | string | yes | Address to add (hex) — should be the user’s **identity** address (as when picking a team member) |
+| `role` | string | no | `Member` (default), `Reader`, `Admin`, or `BackupBot` (case-insensitive). **Owner** is not allowed. |
+
+**Example:**
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "add_zone_member",
+  "params": {
+    "zone_id": "0x…",
+    "peer_id": "0x…",
+    "role": "Reader"
+  },
+  "id": 1
+}
+```
+
+**Result (string):** `"Member added"`
+
+**Errors:** `:invalid_peer_id`, `:forbidden`, `:invalid_role`, `:add_member_failed` (with `details` for contract/tx failure), same zone validation as other zone methods.
+
+---
+
+### `remove_zone_member`
+
+Remove a peer from the zone using the same path as the Team UI (`UI.remove_peer/2`).
+
+**Authorization:** **Owner** or **Admin** only (`:forbidden` otherwise).
+
+**Params:**
+
+| **Field** | **Type** | **Required** |
+| --- | --- | --- |
+| `zone_id` | string | yes |
+| `peer_id` | string | yes — member **or** device address (hex) |
+
+**Example:**
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "remove_zone_member",
+  "params": {
+    "zone_id": "0x…",
+    "peer_id": "0x…"
+  },
+  "id": 1
+}
+```
+
+**Result (string):** `"Member removed"`
+
+**Errors:** `:invalid_peer_id`, `:forbidden`, `:remove_member_failed` (with human-readable `details`), zone/channel style errors from shared validation.
+
+---
+
+### `authenticate` (HTTP)
+
+**Not available over HTTP.** Reserved for WebSocket (returns method not available / `-32601`\-style payload). Use **`Authorization`** on POST instead.
+
+---
+
+## WebSocket-only behavior (`/api/json_rpc/ws`)
+
+Handled in `DdriveWeb.RpcWs`. After connecting, authenticate:
+
+### `authenticate`
+
+**Params:**
+
+| **Field** | **Type** | **Required** |
+| --- | --- | --- |
+| `token` | string | yes — must match `Model.App.remote_api_token()` |
+
+**Example:**
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "authenticate",
+  "params": { "token": "<same_as_bearer_token>" },
+  "id": 1
+}
+```
+
+**Result (string):** `"Authentication successful"`
+
+Until this succeeds, other methods receive an error with `data.error: "not_authenticated"` (code `-32001`).
+
+---
+
+### WebSocket-specific methods
+
+These are **not** handled by `RemoteRPC.execute_rpc/2` for HTTP POST; they exist only on the WebSocket.
+
+#### `subscribe_channel`
+
+Subscribe to new messages for one channel; server will push formatted message batches (see push format below).
+
+**Params:** `zone_id`, and `channel_id` **or** `user_name` (same resolution as `send_message`).
+
+**Result (string):** `"Subscribed"`
+
+---
+
+#### `subscribe_all_channels_in_zone`
+
+Subscribe to all channels in the zone for push notifications.
+
+**Params:** `zone_id`
+
+**Result (string):** `"Subscribed"`
+
+---
+
+#### `get_messages`
+
+Query messages with optional filters.
+
+**Params:**
+
+| **Field** | **Type** | **Required** | **Description** |
+| --- | --- | --- | --- |
+| `zone_id` | string | yes | Zone drive id |
+| `channel_id` | string | no | Limit to one group |
+| `user_name` | string | no | DM channel via BNS |
+| `timestamp` | integer | no | Unix time in **seconds** — messages after this |
+| `limit` | integer | no | Max messages |
+| `order` | string | no | `ASC` or `DESC` |
+
+**Result (object):** `{ "messages": [ … ] }`<br>Each element matches the push format (attributes, `creation_time`, `group_id`, `sender`, etc.)—see `RpcWs.format_message/2`.
+
+---
+
+#### `get_members_meta`
+
+Returns last-chat metadata for zone peers (excluding the current user), for UI-style “member list” insights.
+
+**Params:** `zone_id`
+
+**Result (object):**
+
+```
+{
+  "members": [
+    { "name": "…", "last_chat_timestamp": 1234567890 }
+  ]
+}
+```
+
+(`last_chat_timestamp` may be adjusted when the last message was from the local device—see implementation.)
+
+---
+
+### WebSocket: methods also available after auth
+
+After `authenticate`, the same **`ping`**, **`send_message`**, **`list_zone_members`**, **`add_zone_member`**, and **`remove_zone_member`** calls are dispatched through `RemoteRPC.execute_rpc/2` with a WebSocket source. For **`authenticate`** on an already-authenticated socket, the implementation returns: `"You are already authenticated."`
+
+**Push notifications:** when subscribed, the server sends JSON-RPC–style payloads with a `result` containing `{ "messages": [ … ] }` (no request `id` in outgoing pushes—see `prepare_response` usage in `relay_new_messages`).
+
+---
+
+## Further reading
+
+* External product/docs portal (examples linked in validation errors): <a href="https://app.docs.diode.io/" target="_blank" rel="noopener">app.docs.diode.io</a>
+* JSON-RPC spec: <a href="https://www.jsonrpc.org/specification" target="_blank" rel="noopener">jsonrpc.org</a>
