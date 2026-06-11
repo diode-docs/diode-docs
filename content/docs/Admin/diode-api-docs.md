@@ -6,7 +6,7 @@ nav_section: For Your IT Admin
 weight: 307
 draft: false
 ---
-# Remote JSON-RPC API
+#
 
 The Diode Collab API is available from every Diode Collab instance, is device-wide, and is disabled by default.
 
