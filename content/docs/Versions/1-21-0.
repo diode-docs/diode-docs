@@ -1,0 +1,28 @@
+---
+_schema: default
+title: 1.21.0
+nav_title: 1.21.0
+nav_section: Versions
+weight: 4901
+draft: false
+---
+Diode Collab v1.21.0 was released on July 9, 2026.
+
+* Features
+  * Add chat sync status information to banner
+  * Allow signup even if some BNS registration chains are unavailable
+  * Auto-join Diode Collab fleet for bandwidth sponsorship
+* Bug fixes:
+  * Direct connects via LAN
+
+## Add chat sync status information to banner
+
+Chat sync status information is now shown visibly in a banner above the chat when the device's chat history is catching up to Zone state.
+
+## Allow signup even if some BNS registration chains are unavailable
+
+If a given blockchain network that Diode Collab uses is experiencing an outage, Diode Collab would previously not allow signup because the app couldn't guarantee
+
+## Fix: Various performance improvements
+
+A number of updates have been made with respect to CPU, power, and page load time.
