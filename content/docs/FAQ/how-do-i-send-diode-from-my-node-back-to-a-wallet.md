@@ -6,9 +6,9 @@ nav_section: FAQ
 weight: 20030
 draft: false
 ---
-At the moment, you can't. You’ll need to wait for the upcoming “accountant” feature (expected within 30 days) to enable withdrawals.
+With the accountant feature, you can transfer DIODE from your node back to your wallet, following [**these steps**](https://forum.diode.io/t/lite-node-new-accountant-feature/105).
 
-Important: Any DIODE sent to your node will be automatically staked for at least one full epoch (except in version 1.6.0 and earlier, where it’s not auto-staked yet).
+**Important**: Any DIODE sent to your node will be automatically staked for at least one full epoch (except in version 1.6.0 and earlier, where it’s not auto-staked yet).
 
 This staking ensures the network can route bandwidth reliably to your node.
 
