@@ -27,7 +27,8 @@ To fix, you need to remove the update folder and allow it to re-populate via aut
    1. Where &lt;user&gt; is your Windows username
 4. Locate the update folders (all named update-&lt;version&gt; - e.g. update-1.7.2)
 5. Delete the update folders and all their contents
-6. Start Diode Collab
+6. Restart your machine
+7. Start Diode Collab
 
 ---
 
